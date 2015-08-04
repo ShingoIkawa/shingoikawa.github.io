@@ -4,12 +4,130 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>井川森午 | About</title>
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style>
+      * {
+       margin: 0;
+       padding: 0;
+      }
+
+      body {
+       font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; 
+       background-color: #ddd;
+       font-size: 14px;
+      }
+      
+      .navbar {
+       border-radius: 0
+      }
+      
+      header {
+       background-image: url("profile_ikawa.jpg");
+       background-position: center center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       padding-bottom: 230px;
+      }
+      
+      #logo {
+       padding: 100px;
+       text-align: right;
+      }
+
+      #logo h3 {
+       color: #aaa;
+       text-shadow: 1px 1px 1px #000;
+      }
+
+      section {
+       padding: 10px 10px;
+      }
+      
+      .red {
+       color: red;
+      }
+      
+      footer {
+       padding: 10px 0;
+       font-size: 93%;
+       text-align: center;
+       background-color: #ddd;
+       color: #666;
+       }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <header>
+      <nav class="navber navbar-default">
+        <div class="container-fluid"> 
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> 
+            <a class="navbar-brand">ONLINE BOOTCAMP</a>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+             <li class="active"><a href="#">About</a></li>
+             <li class="dropdown">                                                  
+               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                 Tasks
+                 <span class="caret"></span>
+               </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Task vol.1</a></li>
+                  <li><a href="#">Task vol.2</a></li>
+                  <li><a href="#">Task vol.3</a></li>
+                  <li><a href="#">Task vol.4</a></li>
+                </ul>
+                <!--これが以前のプログラムです
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tasks
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Task vol.1</a></li>
+                  <li><a href="#">Task vol.2</a></li>
+                  <li><a href="#">Task vol.3</a></li>
+                  <li><a href="#">Task vol.4</a></li>
+                </ul>
+                -->
+             </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="logo">
+        <h3>Shingo Ikawa</h3>
+      </div>
+    </header>
+    <div class="container">
+      <section>
+          <h2>About</h2>
+          <h4>Shingo Ikawa</h4>
+          <p>
+           Hi!  My name’s Shinho Ikawa. I’m from Ichikawa, Chiba prefecture. Born and raised. I live in still Ichikawa.
+          </P>
+          <p>I love cycling. I am currently on travel through the Japanese archipelago. 
+           But I cannot have a holiday for a long time. So, I break it down into around 10 stages and complete them step by step for one year. 
+           Finally we will get <span class="red">"Japan by bicycle"</span>!!!
+          </p>
+      </section>
+    <footer>
+      <p>&copy; 2015 Shingo Ikawa.</p>
+    </footer>  
+　　<!--
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
+
   </body>
 </html>
